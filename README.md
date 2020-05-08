@@ -10,3 +10,6 @@
 Оформлен StartScreen: название
 Заменена графика: UFO
 Кнопка выхода из приложения в StartScreen и GameOverScreen меню
+
+8.05.20
+Добавлен HighScore через PlayerPrefs, возможность сброса
