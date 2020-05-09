@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - BirdTracker
     - Game
     - GameOverScreen
+    - HighScore
     - PipeSpawner
     - Score
     - ScoreZone
@@ -22,15 +23,19 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TMP_SubMeshUI
     - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -58,6 +63,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 58
       Script: {instanceID: 0}
+    - Class: 60
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 74
@@ -78,6 +85,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9814}
     - Class: 114
       Script: {instanceID: 9896}
+    - Class: 114
+      Script: {instanceID: 10118}
     - Class: 114
       Script: {instanceID: 10296}
     - Class: 114
@@ -111,9 +120,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11422}
     - Class: 114
-      Script: {instanceID: 11522}
+      Script: {instanceID: 11444}
     - Class: 114
-      Script: {instanceID: 11586}
+      Script: {instanceID: 11524}
+    - Class: 114
+      Script: {instanceID: 11588}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -495,7 +506,7 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: 56593f10c5f88c6dbbaf331e63c7408c
+      Hash: 2a3994336810d21eebb3923de917809d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Game
@@ -529,6 +540,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: 010b250366926d2b9bc609b83bd92b64
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HighScore
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -616,4 +633,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: "C:/Users/\u0410\u043B\u0435\u043A\u0441\u0435\u0439/Desktop/Build TappyBird/TappyBird.apk"
+  playerPath: D:/Programming/Builds/Build TappyBird/Tappy_UFO_1.0.0.apk

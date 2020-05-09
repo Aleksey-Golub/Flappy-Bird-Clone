@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Pipes\ScoreZone.cs" />
     <Compile Include="Assets\Scripts\PipeSpawner.cs" />
     <Compile Include="Assets\Scripts\UI\GameOverScreen.cs" />
+    <Compile Include="Assets\Scripts\UI\HighScore.cs" />
     <Compile Include="Assets\Scripts\UI\Score.cs" />
     <Compile Include="Assets\Scripts\UI\Screen.cs" />
     <Compile Include="Assets\Scripts\UI\StartScreen.cs" />

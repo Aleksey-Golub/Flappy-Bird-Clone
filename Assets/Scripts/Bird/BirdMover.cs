@@ -24,6 +24,8 @@ public class BirdMover : MonoBehaviour
         _minRotation = Quaternion.Euler(0, 0, _minRotationZ);
 
         ResetBird();
+
+        enabled = false;
     }
 
     void Update()
