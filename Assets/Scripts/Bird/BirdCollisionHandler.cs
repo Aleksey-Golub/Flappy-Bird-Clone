@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ public class BirdCollisionHandler : MonoBehaviour
 {
     private Bird _bird;
 
-    private void Start()
+    private void Awake()
     {
         _bird = GetComponent<Bird>();
     }

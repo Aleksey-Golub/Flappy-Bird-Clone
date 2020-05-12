@@ -13,13 +13,16 @@ public class Game : MonoBehaviour
     [SerializeField] private HighScore _highScore;
     [SerializeField] private Button _resetHighscoreButton;
     [SerializeField] private GameObject _resetHighscorePanel;
-   
+    [SerializeField] private Transform _castle;
+    [SerializeField] private HappyEndScreen _happyEndScreen;
 
     private void OnEnable()
     {
         _startScreen.StartButtonClicked += OnStartButtonClick;
         _gameOverScreen.RestartButtonClicked += OnRestartButtonClick;
         _bird.GameOver += OnGameOver;
+        _bird.GameWining += OnGameWining;
+        _birdMover.HappyEnd += OnHappyEnd;
     }
 
     private void OnDisable()
@@ -27,6 +30,7 @@ public class Game : MonoBehaviour
         _startScreen.StartButtonClicked -= OnStartButtonClick;
         _gameOverScreen.RestartButtonClicked -= OnRestartButtonClick;
         _bird.GameOver -= OnGameOver;
+        _bird.GameWining -= OnGameWining;
     }
 
     private void Start()
@@ -35,6 +39,12 @@ public class Game : MonoBehaviour
         _startScreen.Open();
         _gameOverScreen.Close();
         _highScore.Open();
+    }
+
+    private void OnHappyEnd()
+    {
+        _birdMover.HappyEnd -= OnHappyEnd;
+        _happyEndScreen.Open();
     }
 
     private void OnStartButtonClick()
@@ -58,9 +68,16 @@ public class Game : MonoBehaviour
         _birdMover.enabled = true;
         Time.timeScale = 1;
         _bird.ResetPlayer();
+        _pipeSpawner.enabled = true;
+        _castle.SetParent(gameObject.transform);
+    }
+    private void OnGameWining()
+    {
+        _pipeSpawner.enabled = false;
+        _castle.SetParent(null);
     }
 
-    public void OnGameOver()
+    private void OnGameOver()
     {
         Time.timeScale = 0;
         _gameOverScreen.Open();

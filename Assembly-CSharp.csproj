@@ -68,10 +68,12 @@
     <Compile Include="Assets\Scripts\Bird\BirdMover.cs" />
     <Compile Include="Assets\Scripts\BirdTracker.cs" />
     <Compile Include="Assets\Scripts\Game.cs" />
+    <Compile Include="Assets\Scripts\LandingPoint.cs" />
     <Compile Include="Assets\Scripts\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\Pipes\ScoreZone.cs" />
     <Compile Include="Assets\Scripts\PipeSpawner.cs" />
     <Compile Include="Assets\Scripts\UI\GameOverScreen.cs" />
+    <Compile Include="Assets\Scripts\UI\HappyEndScreen.cs" />
     <Compile Include="Assets\Scripts\UI\HighScore.cs" />
     <Compile Include="Assets\Scripts\UI\Score.cs" />
     <Compile Include="Assets\Scripts\UI\Screen.cs" />
